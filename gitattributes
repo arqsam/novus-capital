@@ -1,0 +1,15 @@
+# Normaliza finales de línea a LF en el repositorio, sin importar el SO
+# de quien clona o edita. Evita diffs "falsos" por CRLF vs LF entre
+# colaboradores de Windows/Mac/Linux.
+
+* text=auto eol=lf
+
+# Binarios: nunca tocar finales de línea
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
