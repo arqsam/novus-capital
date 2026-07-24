@@ -2,7 +2,8 @@
 name: Feature (derivada de spec)
 about: Un issue que implementa una historia de usuario ya definida en docs/specs/02-requirements.md
 title: "[NC-XXX-00] Título breve de la feature"
-labels: ["epic:pendiente"]
+labels: []
+# ⬆ Asigná manualmente una épica al crear el issue: epic:auth · epic:dashboard · epic:portfolio · epic:insights · epic:design-system
 ---
 
 ## ID de historia
