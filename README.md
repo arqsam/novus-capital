@@ -66,7 +66,7 @@ npm run test -- --coverage
 
 ## Tablero de gestión de proyecto
 
-El progreso de cada épica (Auth, Dashboard, Portfolio Detail, Insights, Design System) se gestiona públicamente en **GitHub Projects** → *(enlace a agregar una vez creado el tablero)*.
+El progreso de cada épica (Auth, Dashboard, Portfolio Detail, Insights, Design System) se gestiona públicamente en **[GitHub Projects](https://github.com/users/arqsam/projects/2/views/1)**.
 
 ## Estado del proyecto
 
