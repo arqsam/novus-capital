@@ -88,7 +88,7 @@ No hay backend real: la "capa de datos" es un conjunto de módulos en `src/mocks
 src/
 ├── components/          # Componentes de página (no genéricos)
 │   ├── dashboard/
-│   ├── portfolio/
+│   ├── portfolio/       # incluye ContactAdvisorWidget.tsx (NC-CONTACT-01, mock sin backend)
 │   └── insights/
 ├── design-system/        # Componentes base + tokens
 │   ├── tokens.ts

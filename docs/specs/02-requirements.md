@@ -128,6 +128,30 @@
 
 ---
 
+## Épica 5 · Contacto con asesor
+
+### NC-CONTACT-01 — Solicitar contacto con un ejecutivo (mock)
+**Como** cliente
+**Quiero** poder indicar que quiero contactar a un ejecutivo desde el detalle de mi portafolio
+**Para** iniciar una conversación sin tener que salir del dashboard ni buscar un canal externo
+
+**Nota de alcance:** en esta primera iteración el widget **no es un chat real** — no hay backend, no hay persistencia, no hay conexión con ningún ejecutivo real. Es una simulación de la intención (mock), coherente con el carácter demostrativo de todo el proyecto (ver `01-vision.md` sección 5).
+
+**Criterios de aceptación:**
+- **Given** que estoy en la vista de detalle de portafolio
+  **When** el widget de contacto se renderiza
+  **Then** veo un mensaje que pregunta si quiero contactar a un ejecutivo, con un botón de confirmación ("Sí, contactar") y una opción de descarte ("No, gracias")
+- **Given** que hago clic en "Sí, contactar"
+  **When** se registra el clic
+  **Then** veo un mensaje de confirmación simulado (ej. "Un ejecutivo se pondrá en contacto contigo pronto"), sin que se envíe ninguna solicitud real a ningún sistema
+- **Given** que hago clic en "No, gracias" o cierro el widget
+  **When** se registra la acción
+  **Then** el widget se oculta/colapsa sin bloquear ni tapar el resto de la vista de portafolio
+
+**No funcional:** el widget es un componente autocontenido — no introduce una ruta nueva ni depende de `src/services` (a diferencia de las cotizaciones de mercado, acá no hay integración externa real, ver ADR-007 para contraste).
+
+---
+
 ## Requisitos no funcionales
 
 | ID | Requisito |
