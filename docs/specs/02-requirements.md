@@ -100,6 +100,8 @@
 **Quiero** recibir señales simples sobre riesgo y rendimiento
 **Para** entender mi situación sin interpretar tablas complejas
 
+**Ubicación (decisión de diseño, Figma página 2):** el panel de insights vive **únicamente en la vista de Detalle de Portafolio**, no en el Dashboard — se evaluó agregarlo también ahí, pero con `NC-DASH-01` (patrimonio total) ya ocupando un banner de ancho completo como elemento protagónico, sumar insights al Dashboard generaba ruido visual innecesario. Mantenerlo en un solo lugar prioriza limpieza visual sobre redundancia.
+
 **Criterios de aceptación:**
 - **Given** que el portafolio tiene datos de riesgo simulados
   **When** cargo el panel de insights
